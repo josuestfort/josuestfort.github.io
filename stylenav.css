@@ -1,0 +1,246 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about-section, .products-section, .request-section, .contact-section {
+    padding: 50px 50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Apply Flexbox Layout to the Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    flex-grow: 1; /* Ensures the hero section grows to take available space */
+}
+
+
+.navbar {
+    background-color: #004080; /* Navy Blue for your brand */
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #ff6600; /* Orange highlight on hover */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative; /* Required to position the dropdown content */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute;
+    background-color: #004080; /* Match the brand color */
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Add some shadow for better visibility */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #003366; /* Darker navy color on hover */
+}
+
+/* Show the dropdown menu when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Align the dropdown links below the parent element */
+.dropdown:hover .dropbtn {
+    background-color: #ff6600; /* Change the color of "Our Products" when hovered */
+}
+/* Hamburger Menu (For smaller screens) */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #004080;
+    }
+
+    .nav-links li {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Show navigation when hamburger is clicked */
+.showMenu {
+    display: block !important;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

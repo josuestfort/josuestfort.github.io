@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitian Creole Voices & More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <!-- Header and Navigation -->
+  <header>
+
+    <div class="container">
+      <div class="navbar">
+                          <!-- Logo -->
+                          <div class="logo">
+                           <img src="logo/logo_mod.png" alt="Haitian Creole Voices n more Logo" width="150" height="100" position="left">
+                         </div>
+       <!-- Navigation Bar -->
+       <div class="nav-links" style="float:right;">
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="team.html">Our Team</a>
+         <div class="dropdown">
+           <button class="dropbtn">Our Services
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+              <div class="has-submenu">
+
+              </div>
+             <a href="voice-talent.html">Voice Talent</a>
+             <a href="translation.html">Translation</a>
+             
+           </div>
+         </div>
+        
+         <div class="dropdown">
+          <button class="dropbtn">Resources
+            <i class="fa fa-caret-down"></i>
+          </button>
+     
+           <div class="dropdown-content">
+            <a href="video.html">Learning with Us</a>
+            <a href="alphabet.html">Haitian Creole Alphabet</a>
+            <a href="dictionary.html">Haitian Creole Dictionary</a>
+
+           </div>
+        </div>
+         <a href="contactUs.html">Contact Us</a>
+         <button class="request-translation"><a href="request-translation.html">Request Translation</a></button>
+         <button class="request-voiceover"> <a href="request-voiceover.html">Request Voiceover</a></button>
+         
+         
+       </div>
+           <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+     </div>
+   </div>
+     <script src="script.js"></script>
+   </header>
+   <!--<div class="bg-img">-->
+
+   <!--</div>-->
+  
+  <!-- Request Section -->
+  <section id="request" class="request-section">
+    <div class="container">
+      <h2>Request a Translation</h2>
+      <form action="process_translation.php" method="POST" enctype="multipart/form-data">
+        <label for="language-pair">Language Pair</label>
+        <select id="language-pair" name="language_pair">
+          <option value="en-fr">English - French</option>
+          <option value="en-hc">English - Haitian Creole</option>
+          <!-- Add more language options -->
+        </select>
+
+        <label for="document-type">Document Type</label>
+        <input type="text" id="document-type" name="document_type" required>
+
+        <label for="word-count">Word Count</label>
+        <input type="number" id="word-count" name="word_count" required>
+
+        <label for="deadline">Deadline</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <label for="document">Upload Document</label>
+        <input type="file" id="document" name="files" multiple required>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+              <!-- Logo -->
+          <p>        
+            &copy; 2024 Haitian Creole Voices & More. All Rights Reserved.</p>
+          <p>
+              <a href="index.html">Home</a> |
+              <a href="about.html">About</a> |
+              <a href="team.html">Our Team</a> |
+              <a href="request-voiceover.html">Request VoiceOver</a> |
+              <a href="request-translation.html">Request Translation</a> |
+              <a href="contactUs.html">Contact Us</a>
+          </p>
+          
+          <div class="social-media-links">
+            <p>Follow us on:
+              <a href="https://www.facebook.com/profile.php?id=61563725836844&mibextid=JRoKGi" target="_blank" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" target="_blank" title="X">
+                  <i class="fab fa-x"></i>
+              </a>
+              <a href="#" target="_blank" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+            </p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
